@@ -1,10 +1,10 @@
+Aqui está o texto reorganizado com a estrutura de pastas e tecnologias em listas verticais para facilitar a leitura no seu portfólio:
+
 🎬 GOTIFLIX - Clone da Netflix
 Projeto desenvolvido durante a Imersão Front-End da Alura, com o objetivo de recriar a interface da Netflix utilizando HTML, CSS e JavaScript.
 
 🚀 Sobre o projeto
-O GOTIFLIX é uma aplicação web inspirada na Netflix, que permite ao usuário selecionar perfis e navegar por um catálogo personalizado de filmes e séries.
-
-Cada perfil possui conteúdos diferentes, simulando uma experiência real de streaming.
+O GOTIFLIX é uma aplicação web inspirada na Netflix, que permite ao usuário selecionar perfis e navegar por um catálogo personalizado de filmes e séries. Cada perfil possui conteúdos diferentes, simulando uma experiência real de streaming.
 
 ✨ Funcionalidades
 👤 Seleção de perfis: Escolha entre diferentes usuários.
@@ -29,21 +29,34 @@ CSS3
 JavaScript (ES6+)
 
 📁 Estrutura do projeto
-Plaintext
-├── assets/
-├── catalogo/
-│   ├── js/
-│   │   ├── components/
-│   │   │   ├── Card.js
-│   │   │   └── Carousel.js
-│   │   ├── data.js
-│   │   ├── main.js
-│   │   └── utils.js
-│   ├── catalogo.css
-│   └── catalogo.html
-├── index.html
-├── style.css
-├── theme.js
+📂 assets/
+
+📂 catalogo/
+
+📂 js/
+
+📂 components/
+
+📄 Card.js
+
+📄 Carousel.js
+
+📄 data.js
+
+📄 main.js
+
+📄 utils.js
+
+📄 catalogo.css
+
+📄 catalogo.html
+
+📄 index.html
+
+📄 style.css
+
+📄 theme.js
+
 📚 Aprendizados
 Durante o desenvolvimento deste projeto, foram consolidados importantes conceitos de desenvolvimento front-end, como:
 
