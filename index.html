@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="theme.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Quem está assistindo?</h1>
+        <button id="theme-toggle" class="theme-toggle" aria-label="Alternar modo escuro/claro">🌙</button>
+    </header>
+
+    <main>
+        <section class="profiles" aria-label="Perfis de usuários">
+            <ul class="profiles-list">
+                <li class="profile">
+                    <figure>
+                        <img src="/assets/perfil-1.jpg" alt="Foto do Júlia">
+                        <figcaption>Júlia</figcaption>
+                    </figure>
+                </li>
+
+                <li class="profile">
+                    <figure>
+                        <img src="/assets/perfil-2.jpg" alt="Foto do Rafa">
+                        <figcaption>Rafa</figcaption>
+                    </figure>
+                </li>
+
+                <li class="profile">
+                    <figure>
+                        <img src="/assets/perfil-3.jpg" alt="Foto do Lucas">
+                        <figcaption>Lucas</figcaption>
+                    </figure>
+                </li>
+
+                <li class="profile">
+                    <figure>
+                        <img src="/assets/perfil-4.jpg" alt="Foto da Marina">
+                        <figcaption>Marina</figcaption>
+                    </figure>
+                </li>
+
+                <li class="profile action-card" role="button" tabindex="0">
+                    <figure>
+                        <div class="icon">+</div>
+                        <figcaption>Adicionar perfil</figcaption>
+                    </figure>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>Escolha um perfil para continuar.</p>
+        <button class="manage-profiles" type="button">Gerenciar perfis</button>
+    </footer>
+
+    <!-- Modal para adicionar perfil -->
+    <div id="add-profile-modal" class="modal">
+        <div class="modal-content">
+            <h2>Criar novo perfil</h2>
+            <form id="add-profile-form">
+                <label for="profile-name">Nome do perfil:</label>
+                <input type="text" id="profile-name" required maxlength="20">
+                
+                <label for="profile-image">Escolher imagem:</label>
+                <select id="profile-image">
+                    <option value="/assets/perfil-1.jpg">Avatar 1</option>
+                    <option value="/assets/perfil-2.jpg">Avatar 2</option>
+                    <option value="/assets/perfil-3.jpg">Avatar 3</option>
+                    <option value="/assets/perfil-4.jpg">Avatar 4</option>
+                </select>
+                
+                <div class="modal-buttons">
+                    <button type="button" id="cancel-add">Cancelar</button>
+                    <button type="submit">Criar perfil</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal para gerenciar perfis -->
+    <div id="manage-profiles-modal" class="modal">
+        <div class="modal-content">
+            <h2>Gerenciar perfis</h2>
+            <div id="profiles-list-manage" class="profiles-manage-list">
+                <!-- Perfis serão inseridos aqui dinamicamente -->
+            </div>
+            <div class="modal-buttons">
+                <button type="button" id="close-manage">Fechar</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
